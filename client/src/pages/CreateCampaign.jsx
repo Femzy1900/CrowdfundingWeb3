@@ -22,7 +22,10 @@ const CreateCampaign = () => {
     setForm({ ...form, [fieldName]: e.target.value });
   };
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", form);
+  };
   return (
     <div className="flex bg-[#1c1c24] flex-col  items-center justify-center sm:p-10 p-4 rounded-[10px]">
       {isLoading && "Loading..."}
