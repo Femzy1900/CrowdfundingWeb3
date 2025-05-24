@@ -16,8 +16,8 @@ const CreateCampaign = () => {
     deadline: '',
     image: ''
   })
-  const handldeSubmit = (e) => {
-    
+  const handleSubmit = (e) => {
+
   }
   return (
     <div className='flex bg-[#1c1c24] flex-col md:flex-row items-center justify-center gap-[50px] py-[20px] px-[40px] rounded-[10px]'>
@@ -25,7 +25,8 @@ const CreateCampaign = () => {
       <div className='flex justify-center items-center p-[16px] sm:min-w-[380px] bg-[#3a3a43] rounded-[10px]'>
         <h1 className='font-epilogue font-semibold text-[18px] leading-[30px] text-white'>Start a Campaign</h1>
       </div>
-      <form action="" onSubmit={handldeSubmit} className='flex flex-col gap-[30px] w-full'>
+      <form action="" onSubmit={handleSubmit} className='flex flex-col gap-[30px] mt-[65px] w-full'>
+        <div className="flex flex-wrap gap-[40px]"></div>
 
       </form>
     </div>
