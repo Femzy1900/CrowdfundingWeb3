@@ -10,7 +10,7 @@ import { useStateContext } from "../context/index.jsx";
 
 const CreateCampaign = () => {
   const navigate = useNavigate();
-  const { isLoading, setIsLoading } = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const { createCampaign } = useStateContext();
   const [form, setForm] = useState({
     name: "",
